@@ -1,9 +1,9 @@
 .header {
-    color: #276678;
-    font-size: 2rem;
-    border-bottom: 1px solid #d3e0ea;
-  }
-  .header h1 {
-    margin: 0;
-  }
-  
+  color: #102541;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #102541;
+}
+.header h1 {
+  margin: 0;
+}
