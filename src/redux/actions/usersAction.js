@@ -47,7 +47,7 @@ export const setLoadingTrue = () => {
 export const getUsersAsync = () => async (dispatch) => {
   dispatch(setLoadingTrue());
   try {
-    const res = await axios.get('http://localhost:5000/users');
+    const res = await axios.get('http://localhost:3000/users');
 
     if (res.status === 200) {
       let users = [];
