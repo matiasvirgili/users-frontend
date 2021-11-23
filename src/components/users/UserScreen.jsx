@@ -13,7 +13,7 @@ export const UserScreen = () => {
     history.push('users/create');
   };
 
-  const handleModifyUser = () => {
+  const handleModifyUser = (id) => {
     history.push(`/users/update/${id}`);
   };
 

@@ -93,7 +93,7 @@ export const updateUserAsync = (user) => async (dispatch) => {
   }
 };
 
-export const createUserAsync = () => async (dispatch) => {
+export const createUserAsync = (user) => async (dispatch) => {
   dispatch(setLoadingTrue());
 
   try {
