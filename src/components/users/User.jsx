@@ -38,3 +38,8 @@ export const User = ({ user, onModify }) => {
     </div>
   );
 };
+
+User.propTypes = {
+  user: PropTypes.object.isRequired,
+  onModify: PropTypes.func.isRequired,
+};
