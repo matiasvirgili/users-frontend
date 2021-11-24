@@ -39,9 +39,15 @@
   cursor: pointer;
   color: #102541;
 }
+.editIcon:hover {
+  color: blue;
+}
 .deleteIcon {
   height: 2rem;
   width: 2rem;
   cursor: pointer;
   color: #c63637;
+}
+.deleteIcon:hover {
+  color: red;
 }

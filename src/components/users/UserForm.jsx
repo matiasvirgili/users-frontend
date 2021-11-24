@@ -18,14 +18,13 @@ const initialState = {
 };
 
 export const UserForm = () => {
-  const [values, handleInputChange, setAllValues] = useForm(initialState);
+  const [values, handleInputChange, , setAllValues] = useForm(initialState);
   const history = useHistory();
   const dispatch = useDispatch();
   const { action, userId } = useParams();
   const userToModify = useSelector((state) =>
     state.users.list.find((user) => user._id === userId)
   );
-
   const isLoading = useSelector((state) => state.users.isLoading);
 
   useEffect(() => {

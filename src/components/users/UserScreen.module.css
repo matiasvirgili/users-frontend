@@ -15,7 +15,7 @@
   text-decoration: none;
   transition: background 0.1s ease-out 0s,
     box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
-  background: #15883e;
+  background: #51d1f6;
   cursor: pointer;
   height: 32px;
   line-height: 32px;
@@ -30,7 +30,7 @@
 }
 
 .newButton:hover {
-  background: #1db954;
+  background: #00aae4;
   text-decoration: inherit;
   transition-duration: 0s, 0.15s;
   color: rgb(255, 255, 255);

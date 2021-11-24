@@ -8,7 +8,7 @@ import { getUsersAsync } from '../../redux/actions/usersAction';
 
 export const UserScreen = () => {
   const history = useHistory();
-  const { list: users, error, isloading } = useSelector((state) => state.users);
+  const { list: users, error, isLoading } = useSelector((state) => state.users);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export const UserScreen = () => {
       <button className={styles.newButton} onClick={handleAddClick}>
         New User
       </button>
-      {isloading && (
+      {isLoading && (
         <div className={styles.loadingBar}>
           <LinearProgress />
         </div>
