@@ -2,7 +2,7 @@
   color: #102541;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
-  border-bottom: 1px solid #102541;
+  border-bottom: 0.2px solid lightgray;
 }
 .header h1 {
   margin: 0;

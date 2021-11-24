@@ -1,3 +1,7 @@
+.titleUser h2 {
+  color: #020c26;
+  font-family: 'Montserrat', sans-serif;
+}
 .newButton {
   display: inline-block;
   outline: none;

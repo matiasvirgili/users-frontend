@@ -2,12 +2,11 @@ import React, { useEffect } from 'react';
 import { useForm } from '../../hooks/useForm';
 import styles from './UserForm.module.css';
 import { useHistory, useParams } from 'react-router';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import {
   updateUserAsync,
   createUserAsync,
 } from '../../redux/actions/usersAction';
-import { useDispatch } from 'react-redux';
 import Button from '@mui/lab/LoadingButton';
 
 const initialState = {
@@ -24,7 +23,7 @@ export const UserForm = () => {
   const dispatch = useDispatch();
   const { action, userId } = useParams();
   const userToModify = useSelector((state) =>
-    state.users.list.find((user) => user.id === userId)
+    state.users.list.find((user) => user._id === userId)
   );
 
   const isLoading = useSelector((state) => state.users.isLoading);

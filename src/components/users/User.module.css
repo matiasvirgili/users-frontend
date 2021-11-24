@@ -15,7 +15,7 @@
 .column {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 18%;
   overflow: hidden;
 }
 
@@ -37,10 +37,11 @@
   height: 2rem;
   width: 2rem;
   cursor: pointer;
+  color: #102541;
 }
 .deleteIcon {
   height: 2rem;
   width: 2rem;
   cursor: pointer;
-  color: #ff0000;
+  color: #c63637;
 }

@@ -24,7 +24,7 @@ export const UserScreen = () => {
   };
 
   return (
-    <div>
+    <div className={styles.titleUser}>
       <h2>Users</h2>
       <button className={styles.newButton} onClick={handleAddClick}>
         New User

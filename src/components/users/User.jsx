@@ -13,7 +13,7 @@ export const User = ({ user, onModify }) => {
   return (
     <div className={styles.container}>
       <div className={styles.column}>
-        <span className={styles.title}>Full name</span>
+        <span className={styles.title}>Name</span>
         <span className={styles.content}>{name + ' ' + lastName}</span>
       </div>
       <div className={styles.column}>
@@ -21,7 +21,7 @@ export const User = ({ user, onModify }) => {
         <span className={styles.content}>{telephone}</span>
       </div>
       <div className={styles.column}>
-        <span className={styles.title}>Direction</span>
+        <span className={styles.title}>Adress</span>
         <span className={styles.content}>{direction}</span>
       </div>
       <div className={styles.column}>
