@@ -4,7 +4,6 @@ import './UserApp.module.css';
 
 function UsersApp() {
   useEffect(() => {
-    console.log('hi');
     return () => {};
   }, []);
   return <MainRouter />;

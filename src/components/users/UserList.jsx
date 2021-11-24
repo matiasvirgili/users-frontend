@@ -4,7 +4,7 @@ import { User } from './User';
 
 export const UserList = ({ users, onModify }) => {
   return users.map((user) => (
-    <User key={user.id} user={user} onModify={onModify} />
+    <User key={user._id} user={user} onModify={onModify} />
   ));
 };
 

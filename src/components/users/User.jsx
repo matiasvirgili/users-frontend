@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { deleteUserAsync } from '../../redux/actions/usersAction';
 
 export const User = ({ user, onModify }) => {
-  const { id, name, lastName, telephone, direction, dni } = user;
+  const { _id, name, lastName, telephone, direction, dni } = user;
   const dispatch = useDispatch();
 
   return (
@@ -29,10 +29,10 @@ export const User = ({ user, onModify }) => {
         <span className={styles.content}>{dni}</span>
       </div>
       <div className={styles.actions}>
-        <EditIcon className={styles.editIcon} onClick={() => onModify(id)} />
+        <EditIcon className={styles.editIcon} onClick={() => onModify(_id)} />
         <DeleteIcon
           className={styles.deleteIcon}
-          onClick={() => dispatch(deleteUserAsync(id))}
+          onClick={() => dispatch(deleteUserAsync(_id))}
         />
       </div>
     </div>

@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { UserList } from './UserList';
 import styles from './UserScreen.module.css';
 import { useHistory } from 'react-router';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import LinearProgress from '@mui/material/LinearProgress';
+import { getUsersAsync } from '../../redux/actions/usersAction';
 
 export const UserScreen = () => {
   const history = useHistory();
   const { list: users, error, isloading } = useSelector((state) => state.users);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getUsersAsync());
+  }, []);
 
   const handleAddClick = () => {
     history.push('users/create');
