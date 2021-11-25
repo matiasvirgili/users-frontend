@@ -8,7 +8,7 @@ import {
 import { HomeScreen } from '../components/home/HomeScreen';
 import { UserScreen } from '../components/users/UserScreen';
 import { UserForm } from '../components/users/UserForm';
-import { Layout } from '../components/header/Layout';
+import { Layout } from '../components/ui/Layout';
 
 export const MainRouter = () => {
   return (
